@@ -1,0 +1,7 @@
+/*********************************
+* MySQL Query NOT NULL AND NULL  *
+**********************************/
+/*This query will find NULL values using SUM and not NULL values using COUNT*/
+
+SELECT SUM(CASE WHEN variable IS NULL THEN 1 ELSE 0 END)
+		AS column_null_volume, COUNT(variable) AS Volume_count_not_null
