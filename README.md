@@ -15,7 +15,7 @@ Results sample view:
 
 column_null_volume  Volume_count_not_null 
 
-0___________________3555 
+0___________________ 3555 
 
 Space modification made to run on MySQL from PostgreSQL.  
 
