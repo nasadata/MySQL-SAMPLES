@@ -5,6 +5,7 @@ MySQL Workbench 8 version 8.0.29
 To run test:  
 
 SELECT SUM(CASE WHEN variable IS NULL THEN 1 ELSE 0 END) 
+
        AS column_null_volume, COUNT(variable) AS Volume_count_not_null 
        
 FROM table
@@ -14,7 +15,7 @@ Results sample view:
 
 column_null_volume  Volume_count_not_null 
 
-0			              3555 
+0		      3555 
 
 Space modification made to run on MySQL from PostgreSQL.  
 
