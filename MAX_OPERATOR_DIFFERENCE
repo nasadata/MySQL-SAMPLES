@@ -1,0 +1,12 @@
+/************************************************
+* MySQ finding the difference using MAX OPERATOR*
+*************************************************/
+/*This query will find the difference using MAX
+ and avoiding the use of value 0 or a "NULL" in
+ MySQL where a dataset such as stock markets the
+ opening value or close value are never = 0*/
+
+
+SELECT MAX(close - open)
+  FROM stock.aapl_historical_stock_price
+  WHERE OPEN <>0 AND CLOSE !=0;
